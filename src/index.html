@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--<head>-->
-<!--    <meta charset="UTF-8">-->
-<!--    <title>GreenSol Job Application</title>-->
-<!--    <link rel=" stylesheet" href="style.css">-->
-<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
-<!--</head>-->
+<head>
+   <meta charset="UTF-8">
+   <link rel=" stylesheet" href="style.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 <body>
-<div class="container">
+    <div class="container">
+        <!-- <div class="div1"></div>
+        <div class="div2"></div>
+        <div class="div3"></div>
+      </div> -->
 <h2> GreenSol Job Application </h2>
 
     <form action="/action_page.php">
@@ -35,7 +38,7 @@
        <br> <div class="form-group">
             <label for="text">Current Address
             </label><br>
-<!--        <input type="text">-->
+            <input type="text">
             <input type="street"
                    class="form-control"
                    id="autocomplete"
@@ -65,17 +68,17 @@
                    class="form-control"
                    id="inputCountry"
                    placeholder="Country">
-        </div>
+        <!-- </div> -->
 
        <br> <label for="myFile"> Profile Picture Upload</label>
         <form action="/action_page.php">
             <input type="file" id="myFile" name="filename">
         </form><br>
-        <input type="submit" value="Submit">
-    </form>
-</div>
 
-<br><div>
+    </form>
+<!-- </div> -->
+
+<!-- <div> -->
     <h3> Education </h3>
     <label for="eduaction">Highest Level of Education</label>
 
@@ -93,11 +96,41 @@
     <br><label for="number">Graduation Year
     </label><br>
     <input type="number" id="number" name="number"><br>
+<!-- </div> -->
 
+<div>
+    <form action="/action_page.php">
+    <h3> Work Experience </h3>
+    <label for="company">Company Name
+    </label><br>
+    <input type="text" placeholder="Enter name" id="company" name="company"><br>
+
+   <br> <label for="job title">Job Title
+    </label><br>
+    <input type="text" placeholder="Enter job title" id="job title" name="job title"><br>
+
+   <br> <label for="start date">Start Date
+    </label><br>
+    <input type="date" id="start date" name="date"><br>
+
+    <br> <label for="end date">End Date
+</label><br>
+    <input type="date" id="end date" name="date"><br>
+
+    <br><p><label for="job responsibilities">Job Responsibilities
+</label></p>
+    <textarea id="job responsibilities" name="job responsibilities" rows="4" cols="50"></textarea><br>
+
+        <br><label for="current employment">Currently Employed Here
+    </label><br>
+        <input type="checkbox" id="current employment" name="current employment"><br>
 </div>
+</form>
 
+<br><input type="submit" value="Submit">
 
-
+<a href="#" class="next">Next &raquo;</a>
+<a href="#" class="next round"></a>
 
 </body>
 </html>
