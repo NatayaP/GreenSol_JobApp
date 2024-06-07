@@ -1,10 +1,11 @@
 /* Google Fonts - Poppins */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/briefcase.css');
+
 
 *{
     text-align: center;
-    margin: o;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
@@ -15,6 +16,7 @@ body {
     justify-content: center;
     padding: 20px;
     background:#FAF9F8 ;
+    display: grid;
 }
 .container{
     position: relative;
@@ -24,7 +26,97 @@ body {
     border-radius: 8px;
     box-shadow: 0 0 15px;
 }
-.div1, .div2, .div3 {
+.container h2,h5{
+  text-align: center;  
+}
+input[type=text], select {
+    width: 60%;
+    border-radius: 6px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    padding: 5px 5px;
+}
+input[type=email],select{
+    width: 60%;
+    border-radius: 6px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    padding: 5px 5px;
+}
+input[type=tel],select{
+    width: 60%;
+    border-radius: 6px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    padding: 5px 5px;
+}
+input[type=date],select{
+    width: 30%;
+    border-radius: 6px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    padding: 5px 5px;
+}
+input[type=street],select{
+    border-radius: 6px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;  
+}
+input[type=city],select{
+    border-radius: 6px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;  
+}
+input[type=state],select{
+    border-radius: 6px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;  
+}
+input[type=zip],select{
+    border-radius: 6px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;  
+}
+input[type=county],select{
+    border-radius: 6px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;  
+}
+input[type=country],select{
+    border-radius: 6px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;  
+}
+label{
+    margin-right: 80%;
     
 }
-
+.Gender{
+   margin-top: 10%;
+    margin-right: 80%;
+    justify-content: space-evenly;
+    padding-top: 10%;
+}
+input[type=file], select{
+    align-items: center;
+}
+h3{
+    margin-top: 6%;
+}
+input[type=number],select{
+    border-radius: 6px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;  
+}
+.checkbox-group{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.checkbox-group label{
+    gap: 5px ;
+    margin: 15px;
+}
+.Employment{
+    
+}

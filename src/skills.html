@@ -2,53 +2,55 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <link rel=" stylesheet" href="style.css">
+        <link rel=" stylesheet" href="style2.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
      </head>
 <body>
-<div>
-    <h2> GreenSol Job Application </h2><br>
-<h3> Skills </h3>
-    <label for="HTML">HTML</label><br>
-    <input type="checkbox" id="HTML" name="HTML"><br>
+<div class="container">
+    <h2> GreenSol Job Application </h2>
+    <h5> Please complete this form below to apply for a position with us.</h5><br>
+<h2> Skills </h2>
+<div class="checkbox-group">
+    <label for="HTML">HTML</label>
+    <input type="checkbox" id="HTML" name="HTML">
 
-    <label for="CSS">CSS</label><br>
-    <input type="checkbox" id="CSS" name="CSS"><br>
+    <label for="CSS">CSS</label>
+    <input type="checkbox" id="CSS" name="CSS">
   
-    <label for="JavaScript">JavaScript</label><br>
-    <input type="checkbox" id="JavaScript" name="JavaScript"><br>
+    <label for="JavaScript">JavaScript</label>
+    <input type="checkbox" id="JavaScript" name="JavaScript">
 
-    <label for="Python">Python</label><br>
-    <input type="checkbox" id="Python" name="Python"><br>
+    <label for="Python">Python</label>
+    <input type="checkbox" id="Python" name="Python">
 
-    <label for="Java">Java</label><br>
-    <input type="checkbox" id="Java" name="Java"><br>
+    <label for="Java">Java</label>
+    <input type="checkbox" id="Java" name="Java">
 
-    <label for="C#">C#</label><br>
-    <input type="checkbox" id="C#" name="C#"><br>
+    <label for="C#">C#</label>
+    <input type="checkbox" id="C#" name="C#">
 
-    <label for="SQL">SQL</label><br>
-    <input type="checkbox" id="SQL" name="SQL"><br>
+    <label for="SQL">SQL</label>
+    <input type="checkbox" id="SQL" name="SQL">
 
-    <label for="Other">Other</label><br>
-    <input type="checkbox" id="Other" name="Other"><br>
+    <label for="Other">Other</label>
+    <input type="checkbox" id="Other" name="Other">
 </div>
 
-<div> 
-    <h3> Availability </h3>
+
+   <br> <h3> Availability </h3>
     <label for="date">Start Date</label><br>
     <input type="date" id="date" name="date"><br>
 
     <br> <label for="hours">Preferred Working Hours</label><br>
     <input type="time" id="hours" name="hours"><br>
 
-    <br> <label for="location">Preferred Work Location</label>
+    <br> <label class="Location">Preferred Work Location</label><mb-3>
     <input type="radio" id="location" name="location" value="remote">Remote
     <input type="radio"  name="location" value="On-site">On-site
-    <input type="radio" name="location" value="Hybrid">Hybrid<br>
-</div>
+    <input type="radio" name="location" value="Hybrid">Hybrid<br></mb-3>
 
-<div> 
+
+
     <h3> Additional Information </h3>
     <label for="linkedin">LinkedIn Profile</label><br>
     <input type="url" id="linkedin" name="linkedin"><br>
@@ -56,11 +58,11 @@
     <br><label for="github">Github Profile</label><br>
     <input type="url" id="github" name="github"><br>
 
-    <br><p><label for="why">Why Do You Want to Work Here?
+<div class="why"> <br><p><label for="Why">Why Do You Want to Work Here?
     </label></p>
-        <textarea id="why" name="why" rows="4" cols="50"></textarea><br>
+        <textarea class="why" name="why" rows="4" cols="50"></textarea><br>
 
-        <br> <label for="myFile">Upload Resume</label>
+      <br> <label for="myFile">Upload Resume</label>
         <form action="/action_page.php">
             <input type="file" id="myFile" name="filename">
         </form><br>
@@ -74,7 +76,7 @@
         <br> <label for="rate">Rate Your Interest in this Position (1-10)</label><br>
         <input type="range:1-10" id="rate" name="rate"><br>
 
-        <br><H3> Submit </H3>
+        <br>
         <input type="submit" value="Submit">
     
 </div>

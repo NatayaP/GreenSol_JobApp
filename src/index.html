@@ -3,7 +3,9 @@
 <head>
    <meta charset="UTF-8">
    <link rel=" stylesheet" href="style.css">
+   <!-- <> -->
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
 </head>
 <body>
     <div class="container">
@@ -11,34 +13,34 @@
         <div class="div2"></div>
         <div class="div3"></div>
       </div> -->
-<h2> GreenSol Job Application </h2>
+<h2 link href='https://unpkg.com/css.gg@2.0.0/icons/css/briefcase.css' rel='stylesheet'> GreenSol Job Application </h2>
+<h5> Please complete this form below to apply for a position with us.</h5><br>
 
     <form action="/action_page.php">
-        <label for="fullname">Full Name
+        <br><label for="fullname">Full Name
         </label><br>
         <input type="text" placeholder="Enter full name" id="fullname" name="fullname"><br>
 
-        <label for="email">Email Address
+        <br><label for="email">Email Address
         </label><br>
         <input type="email" placeholder="Enter email address" id="email" name="email"><br>
 
-        <label for="tel"> Phone Number
+       <br> <label for="tel"> Phone Number
         </label><br>
         <input type="tel" placeholder="Enter phone number" id="tel" name="phone"><br>
 
-        <label for="date">Birth Date
+       <br> <label for="date">Birth Date
         </label><br>
         <input type="date" id="date" name="date"><br>
 
-       <br> <label for="radio">Gender</label>
+       <br> <label2 class="Gender" for="radio">Gender</label>
         <input type="radio" id="radio" name="gender" value="woman">Woman
         <input type="radio"  name="gender" value="man">Man
         <input type="radio" name="gender" value="other gender">Gender Not Listed<br>
 
        <br> <div class="form-group">
-            <label for="text">Current Address
+            <label class="Address">Current Address
             </label><br>
-            <input type="text">
             <input type="street"
                    class="form-control"
                    id="autocomplete"
@@ -67,7 +69,7 @@
             <input type="country"
                    class="form-control"
                    id="inputCountry"
-                   placeholder="Country">
+                   placeholder="Country"><br>
         <!-- </div> -->
 
        <br> <label for="myFile"> Profile Picture Upload</label>
@@ -93,7 +95,7 @@
     </label><br>
     <input type="text" id="text" name="text"><br>
 
-    <br><label for="number">Graduation Year
+    <br><label class="Number">Graduation Year
     </label><br>
     <input type="number" id="number" name="number"><br>
 <!-- </div> -->
@@ -117,17 +119,15 @@
 </label><br>
     <input type="date" id="end date" name="date"><br>
 
-    <br><p><label for="job responsibilities">Job Responsibilities
+    <br><p><label class="job responsibilities">Job Responsibilities
 </label></p>
     <textarea id="job responsibilities" name="job responsibilities" rows="4" cols="50"></textarea><br>
 
-        <br><label for="current employment">Currently Employed Here
-    </label><br>
-        <input type="checkbox" id="current employment" name="current employment"><br>
+        <br><label class="Employment">Currently Employed Here
+    </label>
+        <input type="checkbox" id="current employment" name="current employment">
 </div>
 </form>
-
-<br><input type="submit" value="Submit">
 
 <a href="#" class="next">Next &raquo;</a>
 <a href="#" class="next round"></a>
