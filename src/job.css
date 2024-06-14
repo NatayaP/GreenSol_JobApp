@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+  font-family: Raleway, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: black;
+  /* background-color: #366cbd ; */
+}
+.Greensol Page{
+  position: absolute;
+}
+.header {
+    padding: 40;
+    overflow: hidden;
+    text-align: center;
+    background: white;
+    color: white;
+    font-size: 30px;
+    background-image: url("/src/images/Logo-Greensol.png") no-repeat, url(/src/images/comment.png) no-repeat, url(/src/images/ring.png) no-repeat;
+    width: 1280px;
+    height: 99px;
+    border-radius: .3em;
+    box-shadow: rgba(0, 0, 0, 0.2) 3px 6px px;
+    border: solid 1px #ccc;
+  }
+  .background{
+    background: #366cbd;
+  }
+  .greensol-icon{
+    margin-left: 30px;
+  }
+  .message-icon{
+    margin-left: 1050px;
+    transform: scale(.06);
+    position: relative;
+    top: -175px;
+  }
+  .bell-con{
+    margin-left: 1050px;
+    transform: scale(.06);
+    /* position: relative; */
+    top: -175px;
+
+  }
+  .site-logo{
+    margin-right: 95%;
+  }
+.Postings{
+  font-size: medium;
+  color: black;
+  /* width: 200%; */
+  /* height: auto; */
+  width: 350px;
+  height: 800px;
+  text-align: center;
+  line-height: 200px;
+  margin: 25px;
+  background-color: white;
+  border-radius: .3em;
+  box-shadow: rgba(0, 0, 0, 0.2) 3px 6px px;
+  border: solid 1px #ccc;
+  overflow-y: auto;
+  }
+  card-container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  .card1 {
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius:.3em;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 80%; 
+    height: 180px;
+    margin: 20px auto;
+  }
+  .card h2 {
+    margin-top: 0;
+  }
+  
+  .card p {
+    margin-bottom: 20px;
+  }
+  .ex1 {
+    width: 110px;
+    height: 110px;
+    overflow: scroll;
+  }
+.HeroImage{
+  font-size: medium;
+  color: black;
+  width: 200%;
+  height: auto;
+  width: 855px;
+  height: 400px;
+  text-align: center;
+  line-height: 200px;
+  margin: 100px;
+  background-color: white;
+  border-color: grey; 
+  border: solid 1px #ccc;
+  box-shadow: rgba(0, 0, 0, 0.2) 3px 6px x;
+  border-radius: .3em;
+  display: flex;
+  margin-left: 31%;
+  margin-top: -64.4%;
+}
+.hero-greensol{
+  transform: scale(.9) scaleX(1.4);
+  padding: .01em 5em 10em 7em;
+}
+.logo-container {
+  width: 100px; /* adjust the width and height to your liking */
+  height: 100px;
+  border-radius: 50%; /* make the container a circle */
+  background-color: white; /* white background */
+  padding: 10px; /* add some padding to center the logo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transform: translate(-770px,180px) ;
+}
+
+.logo-container img {
+  width: 80px; /* adjust the logo size to your liking */
+  height: 80px;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-around; */
+  /* padding: 1em 0; */
+  text-align: center;
+  /* box-sizing: border-box; */
+  transform: translate(390px, -70px);
+}
+
+.card {
+  width: 20%;
+  display: flex;
+  background: white;
+  padding: 2em 4em 1em 2em;
+  /* margin-bottom: 2em; */
+  margin: -1.2em;
+  margin-bottom: 0;
+  border-radius: .3em;
+  box-shadow: rgba(0, 0, 0, 0.2) 3px 6px px;
+  border: solid 1px #ccc;
+  transform: scale(.78);
+  justify-content: center; 
+  align-items: center; 
+  text-align: center;
+  padding: 1em;
+}
+.Requirements{
+  font-size: medium;
+  color: black;
+  height: auto;
+  width: 510px;
+  height: 282px;
+  text-align: center;
+  line-height: 200px;
+  margin: 100px;
+  background-color: white;
+  border-radius: .3em;
+  /* display: flex; */
+  box-shadow: rgba(0, 0, 0, 0.2) 3px 6px px;
+  border: solid 1px #ccc;
+  margin-left: 31%;
+  margin-top: .01%;
+  transform: translateY(-55px);
+}
+.About{
+  font-size: medium;
+  color: black;
+  height: auto;
+  width: 328px;
+  height: 299px;
+  text-align: center;
+  line-height: 200px;
+  margin: 100px;
+  background-color: white;
+  border-radius: .3em;
+  box-shadow: rgba(0, 0, 0, 0.2) 3px 6px px;
+  border: solid 1px #ccc;
+  display: flex;
+  margin-left: 31%;
+  margin-top: .01%;
+  transform: translate(530px,-455px);
+}
+.label-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2px; 
+  transform: translate(650px, -315px);
+  
+}
+label {
+  margin: 0 5px; 
+  font-size: small;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding: 20px 20px;
+  white-space: nowrap;
+}
+
+
+/* .Find{
+  font-size: medium;
+  color: black;
+  width: 100%;
+  height: auto;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  line-height: 200px;
+  margin: 10px;
+  background-color: yellow;
+  flex-direction: row;
+} */
+/* .Company{
+  font-size: medium;
+  color: black;
+  width: 100%;
+  height: auto;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  line-height: 200px;
+  margin: 10px;
+  background-color: yellow;
+  flex-direction: row;
+}
+.Career{
+  font-size: medium;
+  color: black;
+  width: 100%;
+  height: auto;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  line-height: 200px;
+  margin: 10px;
+  background-color: yellow;
+  flex-direction: row;
+}
+ */
