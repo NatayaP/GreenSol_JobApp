@@ -1,91 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <link rel=" stylesheet" href="job.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <link rel=" stylesheet" href="job.css" href="https://fontawesome.com/icons/facebook?f=brands&s=solid">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
+
 <body>
   <div class="background"></div>
   <div class="GreenSol Page">
     <div class="header">
-      <div class="site-logo">
-        <img class="greensol-icon" src ="/src/images/Logo-Greensol.png" alt="Logo-Greensol">
-        <img class="message-icon" src="/src/images/comment.png" alt="Message-Icon">
-        <!-- <img class="bell-icon" src="/src/images/ring.png" alt="Bell-Icon"> -->
-        <div class="label-container">
+      <img class="greensol-icon" src="/src/images/Logo-Greensol.png" alt="Logo-Greensol">
+      <div class="label-container">
         <label for="Dashboard">Dashboard</label>
-        <label for="Find Jobs">Find Jobs</label>
+        <label for="Find Jobs" class="find-jobs-label">Find Jobs</label>
+        <input type="button" id="find-jobs" style="display: none;">
         <label for="Company">Company</label>
         <label for="Career">Career</label>
         <label for="About">About</label>
       </div>
+      <div> <img class="message-icon" src="/src/images/comment.png" alt="Message-Icon">
+        <img class="bell-icon" src="/src/images/ring.png" alt="Bell-Icon">
+        <img class="user-icon" src="/src/images/user.png" alt="User-Icon">
       </div>
     </div>
-      <div class="Postings">
-        <div class="card-container1">
-          <div class="card1">
-      <!-- card content 1 -->
-      <h2>Card 1</h2>
-      <p></p>
-    </div>
-    <div class="card1">
-      <!-- card content 2 -->
-      <h2>Card 2</h2>
-      <p></p>
-    </div>
-    <div class="card1">
-      <!-- card content 3 -->
-      <h2>Card 3</h2>
-      <p>.</p>
-    </div>
-    <div class="card1">
-      <!-- card content 4 -->
-      <h2>Card 4</h2>
-      <p></p>
-    </div>
-    </div>
-          </div>
-      </div>
-      <div class="HeroImage">
-        <img class="hero-greensol" src="/src/images/Hero-Greensol.png" alt="Hero Image">
-        <div class="flex-box"></div>
-        <div class="logo-container">
-          <img src="/src/images/Logo-Greensol.png" alt="Your Logo">
-        </div>
-      </div>
-      <main class="container">
-        <div class="card">
-          <div class="content"><p>Experience Level</p><h4>Intermediate</h4></div>
-        </div>
-        <div class="card">
-          <div class="content"><p>Job Type</p><h4> Contract Work</h4></div>
-        </div>
-        <div class="card">
-          <div class="content"><p>Work Type</p><h4> Remote </h4></div>
-        </div>
-        <div class="card">
-          <div class="content"><p>Salary</p><h4> $/hours </h4></div>
-        </main>
-            <div class="Requirements">
-              <div class="content"><h3>About the Company</h3><br><p></p></div>
+    <div class="Postings">
+      <div class="card-container1">
+        <div class="card1">
+          <div class="small-card-container"></div>
+          <div class="small-card">
+            <div class="small-card1">
+              <div class="small-card2">
+                <div class="small-card3">
+                  <div class="small-card4">
+                    <!-- card content 1 -->
+                    <h2>Card 1</h2>
+                    <p></p>
+                    <button>Detail</button>
+                    <button>Apply Now</button>
+                  </div>
+                </div>
               </div>
-              <div class="About"> </div>
-              <div class="content"></div>
-          </div>
             </div>
           </div>
         </div>
+      </div>
+      <div class="card1">
+        <div class="small-card">
+          <div class="small-card1">
+            <div class="small-card2">
+              <div class="small-card3">
+                <div class="small-card4">
+                  <!-- card content 2 -->
+                  <h2>Card 2</h2>
+                  <p></p>
+                  <button class="detail-button"> Detail </button>
+                  <button class="apply-button"> Apply Now </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        </div>
-        
-      
-  
-        <!-- <div class="Find">
+      </div>
+      <div class="card1">
+        <!-- card content 3 -->
+        <h2>Card 3</h2>
+        <p>.</p>
+      </div>
+      <div class="card1">
+        <!-- card content 4 -->
+        <h2>Card 4</h2>
+        <p></p>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="HeroImage">
+    <img class="hero-greensol" src="/src/images/Hero-Greensol.png" alt="Hero Image">
+    <div class="flex-box">
+    <div class="logo-container">
+      <img class= "Greensol-logo" src="/src/images/Logo-Greensol.png" alt="Your Logo">
+    <div class="Social-media-icons">
+      <img class="social-icon facebook-icon" src="/src/images/facebook.png" alt="Facebook icon" />
+      <img class="social-icon instagram-icon" src="/src/images/instagram.png" alt="Instagram icon" />
+      <img class="social-icon linkedin-icon" src="/src/images/linkedin.png" alt="Linkedin icon" />
+    </div>
+    </div>
+  </div>
+  </div>
+  <main class="container">
+    <div class="card">
+      <div class="content">
+        <p>Experience Level</p>
+        <h4>Intermediate</h4>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content">
+        <p>Job Type</p>
+        <h4> Contract Work</h4>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content">
+        <p>Work Type</p>
+        <h4> Remote </h4>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content">
+        <p>Salary</p>
+        <h4> $/hours </h4>
+      </div>
+  </main>
+  <div class="Requirements">
+    <div class="content2">
+      <h3>
+        <span> About the Company
+      </h3>
+      <br>
+      <p>
+        We leverage the latest technology to bridge the gap in utilities access, providing clean, reliable, and
+        affordable solutions. Our utility and bills management systems promote financial accountability and inclusion.
+        Innovative financing options accelerate access to high-quality clean energy systems, and water filtration and
+        distribution systems, optimizing energy and water access for communities and individuals with critical needs.
+        Additionally, we drive the climate protection agenda with technologies that meet diverse industry stakeholder
+        needs.
+      </p>
+
+    </div>
+  </div>
+  <div class="About"> </div>
+  <div class="content"></div>
+  <!-- <div class="footer">Copyright © 2024 Greensol | All rights reserved.</div> -->
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+
+
+
+  <!-- <div class="Find">
           <dix class="flex-box"></dix>Find Jobs
         </div> -->
-<!-- 
+  <!-- 
           <div class="Company">
             <dix class="flex-box"></dix>Company</div>
 
@@ -94,9 +156,11 @@
 
               <div class="About">
                 <dix class="flex-box"></dix>About -->
-      </div>
-    </div>
   </div>
-    </body>
+  </div>
+  </div>
+  <footer class="footer">Copyright © 2024 Greensol | All rights reserved.</footer>
 </body>
+</body>
+
 </html>

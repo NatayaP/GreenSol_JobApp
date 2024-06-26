@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-*{
+* {
   font-family: Raleway, sans-serif;
   margin: 0;
   padding: 0;
@@ -9,47 +9,53 @@
   color: black;
   /* background-color: #366cbd ; */
 }
-.Greensol Page{
+
+.Greensol Page {
   position: relative;
   /* top: -700px; */
 }
-.header {
-    padding: 40;
-    overflow: hidden;
-    text-align: center;
-    background: white;
-    color: white;
-    font-size: 30px;
-    background-image: url("/src/images/Logo-Greensol.png") no-repeat, url(/src/images/comment.png) no-repeat, url(/src/images/ring.png) no-repeat;
-    width: 1280px;
-    height: 99px;
-    border-radius: .3em;
-    box-shadow: rgba(0, 0, 0, 0.2) 3px 6px px;
-    border: solid 1px #ccc;
-  }
-  .background{
-    background: #366cbd;
-  }
-  .greensol-icon{
-    margin-left: 30px;
-  }
-  .message-icon{
-    margin-left: 1050px;
-    transform: scale(.06);
-    position: relative;
-    top: -175px;
-  }
-  .bell-con{
-    margin-left: 1050px;
-    transform: scale(.06);
-    /* position: relative; */
-    top: -175px;
 
-  }
-  .site-logo{
-    margin-right: 95%;
-  }
-.Postings{
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40;
+  overflow: hidden;
+  text-align: center;
+  background: white;
+  color: white;
+  font-size: small;
+  width: 1280px;
+  height: 99px;
+  border-radius: .3em;
+  box-shadow: rgba(0, 0, 0, 0.2) 3px 6px px;
+  border: solid 1px #ccc;
+
+}
+
+.background {
+  background: #366cbd;
+}
+
+.greensol-icon {
+  margin-left: 30px;
+}
+
+.message-icon, .bell-icon, .user-icon {
+  width: 20px;
+  margin-right: 20px;
+}
+
+.user-icon{
+  border-radius: 50%;
+  border: solid 1px black;
+}
+
+.site-logo {
+  /* margin-right: 95%; */
+}
+
+.Postings {
   font-size: medium;
   color: black;
   /* width: 200%; */
@@ -65,39 +71,84 @@
   border: solid 1px #ccc;
   overflow-y: auto;
   direction: rtl;
-  }
-  card-container1 {
+}
+
+card-container1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.card1 {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: .3em;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 80%;
+  height: 270px;
+  margin: 20px auto;
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+.card p {
+  margin-bottom: 20px;
+}
+
+/* .small-card-container{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
   }
-  .card1 {
-    background-color: #f7f7f7;
+  .small-card{
+    background-color: #eee;
     border: 1px solid #ddd;
-    border-radius:.3em;
-    padding: 20px;
-    margin-bottom: 20px;
-    width: 80%; 
-    height: 270px;
-    margin: 20px auto;
+    border-radius: 0.2em;
+    padding: 10px;
+    margin-right: 10px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    transform: translate(-95px,-25px);
+  } */
+/* .small-card1{
+    display: flex;
+    background: #eee;
+    height: 40px;
+    width: 120px;
+    border-radius: .2em;
+    box-shadow: rgba(0, 0, 0, 0.2) 3px 6px px;
+    border: solid 1px #ccc;
+    transform: scale(.68);
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    padding: 1em;
   }
-  .card h2 {
-    margin-top: 0;
-  }
-  
-  .card p {
-    margin-bottom: 20px;
-  }
-  .ex1 {
-    width: 110px;
-    height: 110px;
-    overflow: scroll;
-  }
-  .Postings:not(.other-boxes) {
-    /* your styles here */
-  }
-.HeroImage{
+  .card1.detail-button{
+    display: flex;
+  background: white;
+  border-radius: .3em;
+  box-shadow: rgba(0, 0, 0, 0.2) 3px 6px px;
+  border: solid 1px #ccc;
+  height: 50px;
+
+  } */
+.ex1 {
+  width: 110px;
+  height: 110px;
+  overflow: scroll;
+}
+
+.Postings:not(.other-boxes) {
+  /* your styles here */
+}
+
+.HeroImage {
   font-size: medium;
   color: black;
   width: 200%;
@@ -108,7 +159,7 @@
   line-height: 200px;
   margin: 100px;
   background-color: white;
-  border-color: grey; 
+  border-color: grey;
   border: solid 1px #ccc;
   box-shadow: rgba(0, 0, 0, 0.2) 3px 6px x;
   border-radius: .3em;
@@ -116,27 +167,36 @@
   margin-left: 31%;
   margin-top: -77.3%;
 }
-.hero-greensol{
+
+.hero-greensol {
   transform: scale(.9) scaleX(1.4);
   padding: .01em 5em 10em 7em;
 }
+
 .logo-container {
-  width: 100px; /* adjust the width and height to your liking */
+  display: flex;
+  width: 100px;
   height: 100px;
-  border-radius: 50%; /* make the container a circle */
-  background-color: white; /* white background */
-  padding: 10px; /* add some padding to center the logo */
+  border-radius: 50%;
+  background-color: white;
+  padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  transform: translate(-770px,180px) ;
+  transform: translate(-750px, 180px);
 }
 
 .logo-container img {
-  width: 80px; /* adjust the logo size to your liking */
+  width: 80px;
   height: 80px;
+  transform: translate(2px)
 }
+
+.Greensol-logo{
+  position: absolute;
+}
+
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -147,31 +207,75 @@
   transform: translate(390px, -70px);
 }
 
+.Social-media-icons{
+  display: flex;
+  /* justify-content: flex-start;  */
+  position: relative;
+  right: -570px;
+  top: -15px;
+}
+
+.facebook-icon{
+  border-radius: 50%;
+  border: solid 1px white;
+  background-color: white;
+  height: 5px;
+  width: 5px;
+}
+
+/* .facebook-icon {
+  display: flex;
+  justify-content: center;
+  transform: scale(-.7), translate(600px, -50px);
+  transform: matrix(-0.7, 0, 0, -0.7, 600, -50);
+  background-color: white;
+  border-radius: 50%;
+  position: relative;
+  padding: 30px;
+  width: 5px;
+  height: 5px;
+} */
+
+.Part-time h3 {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  margin-top: 10px;
+
+}
+
+.Part-time h3 span {
+  margin: 0 10px;
+  position: relative;
+}
+
 .card {
   width: 20%;
   display: flex;
   background: white;
   padding: 2em 4em 1em 2em;
-  /* margin-bottom: 2em; */
   margin: -1.2em;
   margin-bottom: 0;
   border-radius: .3em;
   box-shadow: rgba(0, 0, 0, 0.2) 3px 6px px;
   border: solid 1px #ccc;
   transform: scale(.78);
-  justify-content: center; 
-  align-items: center; 
+  justify-content: center;
+  align-items: center;
   text-align: center;
   padding: 1em;
 }
-.Requirements{
+
+.Requirements {
   font-size: medium;
-  color: black;
+  color: #ccc;
   height: auto;
   width: 510px;
   height: 450px;
   text-align: center;
-  line-height: 200px;
+  line-height: 25px;
+  font-size: small;
   margin: 100px;
   background-color: white;
   border-radius: .3em;
@@ -182,7 +286,24 @@
   margin-top: .01%;
   transform: translateY(-59px);
 }
-.About{
+
+.content2 {
+  text-align: left;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 15px;
+  color: #eee;
+  /* max-width: 10px ; */
+}
+
+.content2 h3 {
+  text-align: left;
+  display: flex;
+  justify-content: left;
+}
+
+.About {
   font-size: medium;
   color: black;
   height: auto;
@@ -198,24 +319,39 @@
   display: flex;
   margin-left: 31%;
   margin-top: .01%;
-  transform: translate(530px,-609px);
+  transform: translate(530px, -609px);
+  margin-bottom: 0;
 }
+
 .label-container {
-  display: flex;
+  /* display: flex;
   justify-content: center;
   align-items: center;
   height: 2px; 
-  transform: translate(650px, -315px);
-  
+  transform: translate(650px, -315px); */
+
 }
+
 label {
   margin: 0 5px; 
-  font-size: small;
-  display: flex;
   justify-content: space-around;
-  text-align: center;
   padding: 20px 20px;
   white-space: nowrap;
+}
+
+.find-jobs-label{
+  border-radius: 5%;
+  outline: 0.5px solid #366cbd;
+  background-color: #366cbd;
+  color: white;
+  padding: 10px 15px;
+
+}
+
+.footer {
+  text-align: center;
+  height: 50px;
+  margin-top: -50px;
 }
 
 
