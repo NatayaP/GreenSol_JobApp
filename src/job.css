@@ -41,12 +41,14 @@
   margin-left: 30px;
 }
 
-.message-icon, .bell-icon, .user-icon {
+.message-icon,
+.bell-icon,
+.user-icon {
   width: 20px;
   margin-right: 20px;
 }
 
-.user-icon{
+.user-icon {
   border-radius: 50%;
   border: solid 1px black;
 }
@@ -55,16 +57,19 @@
   /* margin-right: 95%; */
 }
 
+.Job-Information {
+  display: flex;
+  gap: 1.5rem;
+  padding: .5rem 1.5rem 0rem 1.5rem;
+}
+
 .Postings {
   font-size: medium;
   color: black;
-  /* width: 200%; */
-  /* height: auto; */
-  width: 350px;
-  height: 963.7px;
   text-align: center;
-  line-height: 200px;
-  margin: 25px;
+  line-height: 23px;
+  font-size: small;
+  flex: 1;
   background-color: white;
   border-radius: .3em;
   box-shadow: rgba(0, 0, 0, 0.2) 3px 6px px;
@@ -73,23 +78,29 @@
   direction: rtl;
 }
 
-card-container1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
+.Postings-label .freelance-label, .remote-label, .intermediate-label{
+ border: solid 1px #f4f4f4;
+ background-color: #f4f4f4;
+ padding: 2px 4px;
+ border-radius: 5%;
+ gap: 1rem;
+
+}
+
+.card-container1 {
+ 
 }
 
 .card1 {
   background-color: white;
   border: 1px solid #ddd;
   border-radius: .3em;
-  padding: 20px;
   margin-bottom: 20px;
-  width: 80%;
-  height: 270px;
-  margin: 20px auto;
-}
+  text-align: center;
+  }
+  .card1 h5, .card1 p {
+    color: grey;
+  }
 
 .card h2 {
   margin-top: 0;
@@ -99,73 +110,67 @@ card-container1 {
   margin-bottom: 20px;
 }
 
-/* .small-card-container{
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 20px;
-  }
-  .small-card{
-    background-color: #eee;
-    border: 1px solid #ddd;
-    border-radius: 0.2em;
-    padding: 10px;
-    margin-right: 10px;
-    height: 50px;
-    width: 50px;
-    text-align: center;
-    transform: translate(-95px,-25px);
-  } */
-/* .small-card1{
-    display: flex;
-    background: #eee;
-    height: 40px;
-    width: 120px;
-    border-radius: .2em;
-    box-shadow: rgba(0, 0, 0, 0.2) 3px 6px px;
-    border: solid 1px #ccc;
-    transform: scale(.68);
-    justify-content: center; 
-    align-items: center; 
-    text-align: center;
-    padding: 1em;
-  }
-  .card1.detail-button{
-    display: flex;
+/* .small-card-container {
+  display: flex;
+  justify-content: left;
+} */
+
+/* .small-card {
+  justify-content: left;
+  background-color: #eee;
+  border: 1px solid #ddd;
+  border-radius: 0.2em;
+  height: 50px;
+  width: 50px;
+  
+  
+} */
+
+ /* .small-card1 {
+  display: flex;
+  background: #eee;
+  height: 40px;
+  width: 120px;
+  border-radius: .2em;
+  box-shadow: rgba(0, 0, 0, 0.2) 3px 6px px;
+  border: solid 1px #ccc;
+  transform: scale(.68);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1em;
+} */
+
+/* .card1.detail-button {
+  display: flex;
   background: white;
   border-radius: .3em;
   box-shadow: rgba(0, 0, 0, 0.2) 3px 6px px;
   border: solid 1px #ccc;
   height: 50px;
 
-  } */
-.ex1 {
+} */
+
+*/ .ex1 {
   width: 110px;
   height: 110px;
   overflow: scroll;
 }
 
-.Postings:not(.other-boxes) {
-  /* your styles here */
-}
 
-.HeroImage {
+.HeroImage-container {
   font-size: medium;
   color: black;
-  width: 200%;
-  height: auto;
-  width: 855px;
-  height: 400px;
+  flex: 2.5;
   text-align: center;
   line-height: 200px;
-  margin: 100px;
   background-color: white;
   border-color: grey;
   border: solid 1px #ccc;
   box-shadow: rgba(0, 0, 0, 0.2) 3px 6px x;
   border-radius: .3em;
   display: flex;
-  margin-left: 31%;
-  margin-top: -77.3%;
+
 }
 
 .hero-greensol {
@@ -193,7 +198,7 @@ card-container1 {
   transform: translate(2px)
 }
 
-.Greensol-logo{
+.Greensol-logo {
   position: absolute;
 }
 
@@ -207,7 +212,7 @@ card-container1 {
   transform: translate(390px, -70px);
 }
 
-.Social-media-icons{
+.Social-media-icons {
   display: flex;
   /* justify-content: flex-start;  */
   position: relative;
@@ -215,26 +220,19 @@ card-container1 {
   top: -15px;
 }
 
-.facebook-icon{
+.facebook-icon {
+  position: relative;
   border-radius: 50%;
-  border: solid 1px white;
-  background-color: white;
-  height: 5px;
-  width: 5px;
+  /* border: solid 1px white;
+  background-color: white; */
 }
 
-/* .facebook-icon {
-  display: flex;
-  justify-content: center;
-  transform: scale(-.7), translate(600px, -50px);
-  transform: matrix(-0.7, 0, 0, -0.7, 600, -50);
-  background-color: white;
-  border-radius: 50%;
-  position: relative;
-  padding: 30px;
-  width: 5px;
-  height: 5px;
-} */
+.Job-Title {
+  display: inline-flex;
+  justify-content: left;
+  margin: 0;
+}
+
 
 .Part-time h3 {
   display: flex;
@@ -333,13 +331,13 @@ card-container1 {
 }
 
 label {
-  margin: 0 5px; 
+  margin: 0 5px;
   justify-content: space-around;
   padding: 20px 20px;
   white-space: nowrap;
 }
 
-.find-jobs-label{
+.find-jobs-label {
   border-radius: 5%;
   outline: 0.5px solid #366cbd;
   background-color: #366cbd;
